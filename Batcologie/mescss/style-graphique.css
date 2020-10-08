@@ -1,0 +1,625 @@
+html {
+    font-size: 62.5%;
+}
+
+/* header*/
+
+header {
+    z-index: 10;
+}
+
+header > a > img {
+
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+header > h1 {
+    display: inline-block;
+    padding-left: 28px;
+}
+
+header > h1 > a {
+    text-decoration: none;
+    color: #FDCC01;
+}
+
+
+/*nav*/
+
+.menu-open,
+.menu-open body {
+    overflow: hidden;
+
+}
+
+body > header > nav > a > img, body > div > header > nav > a > img {
+    position: absolute;
+    padding-left: 94px;
+}
+
+.nav-toggle {
+
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-toggle-bar,
+.nav-toggle-bar::before,
+.nav-toggle-bar::after {
+    content: "";
+    background: white;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .4s ease;
+
+}
+
+.nav-toggle-bar::before {
+    top: -10px;
+}
+
+.nav-toggle-bar::after {
+    top: 10px;
+}
+
+.menu {
+    position: fixed;
+    z-index: 1;
+    background-image: linear-gradient(#151515, #232323);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    visibility: hidden;
+    overflow: hidden;
+    transform: translateX(100vw);
+    transition: all .4s ease-in-out;
+
+}
+
+/* Qaund on clique sur l'icone de menu */
+
+.menu-open .menu {
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+
+
+}
+
+
+
+/* Eléments du menu */
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 96px
+
+}
+
+.menu img {
+    position: absolute;
+    top: 80px;
+
+
+}
+
+.menu li {
+    margin-bottom: 30px;
+
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu-open .nav-toggle-bar::after {
+
+    background: white;
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.menu-open .nav-toggle-bar::before {
+    opacity: 0;
+}
+
+.menu-open .nav-toggle-bar {
+    transform: rotate(135deg);
+    background: white;
+}
+
+/*nav fin*/
+
+
+/*header fin*/
+
+
+body {
+    font-size: 1.6rem;
+
+}
+
+video {
+    width: 100%;
+    background-color: #000000;
+
+}
+
+p.legende-image {
+    font-style: italic;
+    color: #5D5D5D;
+    margin-top: 0;
+    padding-left: 0;
+    font-size: 1.4rem;
+}
+
+
+.impact > figure > img,
+.début > figure > img,
+.main > .début > figure > img,
+main > figure > img {
+    width: 100%;
+}
+
+/*bandeau jaune*/
+
+.bande-jaune, .bande-jaune1, .bande-jaune2, .bande-jaune3, .bande-jaune4{
+    text-align: center;
+}
+
+
+.bande-jaune, .impact > .bande-jaune1 {
+    background-color: #FDCC01;
+
+}
+
+
+body > div > div.bande-jaune1 > img:nth-child(2){
+    padding-left: 40px;
+}
+
+
+
+body > main > div:nth-child(11) > img:nth-child(2){
+    padding-left: 30px;
+}
+
+main.impact > .bande-jaune1 > img:first-of-type {
+    padding-bottom: 0;
+    background-color: #FDCC01;
+    padding-left: 23px;
+}
+
+
+.bande-jaune2 > img, .bande-jaune2 {
+    background-color: #FDCC01;
+}
+
+body > main > div.espace1 > div > img:nth-child(2){
+    padding-left: 30px;
+}
+
+.bande-jaune2 > img:first-of-type {
+    width: 25%;
+}
+
+.bande-jaune3 > img, .bande-jaune3 {
+    padding-top: 5px;
+    text-align: center;
+    background-color: #FDCC01;
+}
+
+.bande-jaune4 > img, .bande-jaune4 {
+    padding-top: 5px;
+    background-color: #FDCC01;
+}
+
+.bande-jaune4 > img:last-of-type {
+    padding-left: 62px;
+}
+
+/*bandeau jaune FIN*/
+
+
+.exergue {
+    background-color: #11183B;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+p, h2, h3, h4, .chapeau > p {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+/* pour espacer les images et le textes dans les articles*/
+.espace {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.espace1 {
+    padding-top: 20px;
+}
+
+/* pour espacer les images et le textes dans les articles*/
+
+/* bouton en fin de page des différents articles*/
+
+.bouton > a {
+
+    text-decoration-line: none;
+    text-align: center;
+
+}
+
+.bouton2 {
+    background-color: #FDCC01;
+    border-radius: 4px;
+    padding: 7px;
+    display: inline-block;
+    margin-left: 275px;
+    margin-bottom: 10px;
+}
+
+body > div > div.bouton2 {
+    margin-left: 244px;
+}
+
+.bouton2 > a {
+
+    text-decoration-line: none;
+    text-align: center;
+
+}
+
+/* bouton en fin de page des différents articles*/
+
+
+
+
+/*éléments utilisé pour chaque page FIN */
+body > main > div.début > div > h2 {
+    margin: 0;
+    padding-top: 80px;
+    color: white;
+    background-color: #0C0B0B;
+    padding-left: 30px;
+}
+
+/*Index + Article*/
+.chapeau > p {
+    padding-top: 26px;
+    color: white;
+    background-color: #0C0B0B;
+    margin: 0;
+    padding-bottom: 25px;
+
+
+}
+
+.intro > figure > img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    padding-left: 30px;
+}
+
+.article1 > figure > img, .article2 > figure > img, .article3 > figure > img {
+    width: 100%;
+}
+
+body > div > div.début > div > h2 {
+    margin: 0;
+    color: white;
+    background-color: #0C0B0B;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.intro {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+    padding-top: 54px;
+}
+
+.article > p {
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+
+
+.article1, .article2, .article3 {
+    padding-bottom: 40px;
+}
+
+
+.article1 > a, .article2 > a, .article3 > a {
+    margin-top: 10px;
+    margin-left: 134px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+/*Index + Article FIN*/
+
+
+.bouton {
+    background-color: #FDCC01;
+    border-radius: 4px;
+    padding: 7px;
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+}
+
+.bouton > a, .bouton2 > a {
+
+    text-decoration-line: none;
+    text-align: center;
+    color: black;
+
+}
+
+
+/*Galerie*/
+
+.ancre {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 87px;
+}
+
+
+.galerie {
+    background-color: #5D5D5D;
+}
+
+.galerie > img {
+    width: 93%;
+}
+
+.galerie > h2 {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.galerie > img {
+    padding-left: 12px;
+}
+
+
+.photo-ligne {
+
+    display: inline-block;
+    padding-left: 12px;
+}
+
+.photo-ligne > img {
+    width: 46%;
+
+}
+
+.photo-ligne > img:last-of-type {
+    padding-left: 11px;
+}
+
+
+/*Fin Galerie*/
+
+
+/*A propos*/
+.formulaire {
+    background-color: #FDCC01;
+
+}
+
+.formulaire > h2 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 70px;
+}
+
+
+.formulaire > form > p > label {
+    padding-right: 35px;
+
+}
+
+body > div.formulaire > form:nth-child(5) > p > label {
+    padding-right: 11px;
+}
+
+body > div.formulaire > form:nth-child(6) > p > label {
+    padding-right: 16px;
+}
+
+.formulaire > form {
+    margin-bottom: 40px;
+}
+
+.formulaire > p {
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+
+.formulaire > .bouton-contact {
+    display: inline-block;
+    background-color: white;
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: 127px;
+
+}
+
+
+.formulaire > .bouton-contact > a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+.formulaire > form > p > textarea:last-child {
+    margin-top: 10px;
+}
+
+.autres-projets {
+    background-color: #363636;
+    color: white;
+
+}
+
+.autres-projets > h3 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.autres-projets > h2 {
+    margin-top: 0;
+    padding-top: 25px;
+}
+
+.autres-projets > figure {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.autres-projets > figure.img-autres-projets > a > img {
+    width: 100%;
+
+
+}
+
+
+/*A propos FIN */
+
+/*footer*/
+
+footer{
+    text-align: center;
+}
+
+footer > p {
+    margin-top: 0;
+    text-align: center;
+}
+
+footer > p:first-child {
+    margin-left: 114px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+}
+
+footer > p:nth-child(2n+0) {
+    padding-left: 25px;
+    padding-right: 27px;
+
+}
+
+footer > a, footer > p:last-child, footer > .MMI {
+
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+.MMI > a {
+
+    background: url(../../img/icon-mmi.png);
+    display: block;
+    height: 51px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 45px;
+    padding-top: 30px;
+    font-size: 9px;
+    width: 100px;
+    color: #FDCC01;
+    text-decoration: underline;
+}
+
+
+i {
+    font-size: 25px;
+
+}
+
+body > footer > a:nth-child(4) > i {
+    color: white;
+}
+
+body > footer > a:nth-child(6) > i{
+    color: white;
+}
+
+
+footer > a:nth-child(2n+1) {
+    color: white;
+    font-size: 9px;
+    padding-top: 15px;
+}
+
+footer > a:first-of-type {
+    color: #FDCC01;
+
+}
+
+
+footer > p:first-of-type {
+    font-size: 9px;
+    margin-top: 0;
+    padding-top: 14px;
+    padding-bottom: 8px;
+}
+
+footer > p:nth-child(2n+0), footer > p:nth-child(2n+1) {
+    padding-bottom: 0;
+    font-size: 9px;
+    text-align: center;
+}
+/* footer fin*/
+
+
+
+

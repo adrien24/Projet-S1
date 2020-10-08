@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Russo+One&display=swap");
+
+
+
+/*corps*/
+
+body {
+    font-family: Poppins, sans-serif; /* Famille de police CorbelRegular */
+    font-size: 14px; /* Taille de police 14px */
+    line-height: 21px; /* hauteur de ligne 21px */
+    margin: 0;
+
+}
+
+/* en-tête*/
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #11183B;
+}
+
+
+/*menu navigation*/
+.menu li{
+    font-family: Russo One, sans-serif;
+    font-weight: normal
+}
+/* menu de navigation fin */
+
+/* fin en-tête*/
+
+
+p { /* Pour tous les textes ordinaires (p) */
+    font-size: 1.6rem; /* Taille de police 14px */
+
+}
+
+h1{
+    font-size: 25px;
+    color: #FDCC01;
+}
+
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3,h4{
+    font-family: Russo One, sans-serif; /* Famille de police WalkwaySemiBoldRegular */
+    font-weight: normal
+}
+
+
+p > a{
+    color: #FDCC01;
+    font-size: 1.6rem;
+}
+
+.chapeau > p{
+    font-size: 1.6rem;
+}
+
+/*Bouton a la fin des page article pour aller à la page suivante*/
+.bouton > a, .bouton2 > a {
+     font-family: Russo One, sans-serif;
+     font-weight: normal
+ }
+/*Bouton a la fin des page article pour aller à la page suivante*/
+
+
+figcaption{
+      color: #535353;
+      font-size: 1.2rem;
+      font-style: italic;
+  }
+
+figure.img-autres-projets > figcaption{
+    color: white;
+}
+
+/* mise en exergue */
+.exergue > p{
+     font-family: Russo One, sans-serif; /* Famille de police WalkwaySemiBoldRegular */
+     font-weight: normal
+
+ }
+
+/* mise en exergue */
+
+/*footer*/
+footer{
+    background-color: #1D1D1D;
+}
+
+footer > p{
+    color: #707070;
+}
+
+/*footer fin*/
+
+
+/*corps fin*/
+
+
+
+/* page index*/
+
+.article1 > a,.article2 > a, .article3 > a{
+    font-family: Russo One, sans-serif; /* Famille de police WalkwaySemiBoldRegular */
+    font-weight: normal
+}
+
+
+
+.intro > h2,.intro > p{
+    color: white;
+
+}
+
+.intro{
+    background-color: black;
+
+}
+
+.article1 > h2{
+    color: #5D5D5D;
+}
+
+.article1 > p{
+    color: #535353;
+}
+
+.article1 > a{
+    background-color: #FDCC01;
+    color: #060605;
+}
+
+
+.article2 > h2{
+    color: #5D5D5D;
+}
+
+.article2 > p{
+    color: #535353;
+}
+
+.article2 > a{
+    background-color: #FDCC01;
+    color: #060605;
+}
+
+
+.article3{
+    background-color: #11183B;
+}
+
+.article3 > h2{
+    color: #FFFFFF;
+}
+
+.article3 > p{
+    color: #FFFFFF;
+}
+
+.article3 > a{
+    background-color: #FDCC01;
+    color: #060605;
+}
+/* index fin*/
+
+
+strong{
+    font-weight:normal;
+}
+
+
+
+/* A propos*/
+.formulaire > .bouton-contact > a{
+    font-family: Russo One, sans-serif;
+    font-weight: normal
+}
+
+/*A propos fin*/
+
+
+/*galerie*/
+
+.ancre{
+    color: white;
+}
+
+/*Galerie fin*/
